@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark"></android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PicEdd"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/selectphotoButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select a Photo"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:clickable="true"
+            />
+        <Button
+            android:id="@+id/seeExistingPhotoButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Existing Photos"
+            android:textAllCaps="false"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:clickable="true"
+            />
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
